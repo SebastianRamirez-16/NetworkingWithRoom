@@ -30,7 +30,6 @@ class UserAdapter(private val users: List<User>, private val userDao: UserDao) :
                 }
             }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
@@ -44,6 +43,6 @@ class UserAdapter(private val users: List<User>, private val userDao: UserDao) :
         val user = users[position]
         holder.tvJob.text = user.job
         holder.tvEmpresa.text = user.empresa
-        // Aquí puedes agregar la lógica para el botón "btnAdd" si lo necesitas
+
     }
 }
